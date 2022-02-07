@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <link rel="icon" href="~/Images/favicon.ico" type="image/ico">
+    <title>Student Feedback System</title>
+ 
+    <style type="text/css">
+
+
+        .style1
+        {
+            width: 99%;
+            height: 27px;
+        }
+        .style3
+        {
+            height: 63px;
+             width:1%;
+            text-align: right;
+        }
+        .style19
+        {
+            height: 63px;
+            text-align: right;
+            width: 928px;
+        }
+        .style17
+        {
+            text-align: center;
+            font-family: "Century Gothic";
+            font-weight: bold;
+        }
+        .style18
+        {
+            height: 112px;
+        }
+        </style>
+ 
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1" style="border-color: #669999" bgcolor="#669999">
+        <tr>
+            <td bgcolor="#669999" class="style3" style="border-color: #669999">
+                &nbsp;&nbsp;</td>
+            <td bgcolor="#669999" class="style19">
+                <div class="style17">
+                    <marquee behavior="alternate" class ="style17">STUDENT FEEDBACK SYSTEM</marquee></div>
+                <table align="center" bgcolor="Silver" class="style1">
+                    <tr>
+                        <td style="border-color: #669999; text-align: left" class="style18">
+                            <asp:Image ID="Image2" runat="server" Height="197px" 
+                                ImageUrl="~/Images/students looking1.JPG" Width="100%" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp;&nbsp; <b>Copy right &copy;&nbsp;VDC Ltd</b></td>
+            <td bgcolor="#669999" class="style3">
+                &nbsp;&nbsp;
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
